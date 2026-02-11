@@ -2,7 +2,7 @@
 
 USE IT_CompanyDB;
 
--- SELECT Subquery + (JOIN, Aggregation, NON/Correlated, NOT/EXISTS)
+-- SELECT Subquery + (JOIN, Aggregation, NON+Correlated, NOT+EXISTS, CASE)
 
 
 
@@ -44,6 +44,7 @@ select
 		from Assignments a
 		where a.employee_id = e5.id
 		)
+
     ) as project_emp_count
 	
 from Departments d
